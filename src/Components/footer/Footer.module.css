@@ -1,0 +1,94 @@
+.footer_container {
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    gap: 20px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 30px auto !important;
+    padding: 20px !important;
+
+    height: auto !important;
+    width: 100% !important;
+    min-height: 60px !important;
+}
+
+.footer_label {
+    text-align: center !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.footer_author {
+    box-sizing: border-box !important;
+    background-color: var(--bg-color-004) !important;
+    box-shadow: var(--box-shadow-002) !important;
+    border-radius: 5px !important;
+    border: none !important;
+    color: var(--color-003) !important;
+
+    display: flex !important;
+    gap: 5px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 10px 20px !important;
+
+    height: auto !important;
+    width: 100% !important;
+}
+
+.footer_contact {
+    display: flex !important;
+    gap: 5px !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+
+    font-size: 18px !important;
+    margin: 10px !important;
+
+    height: auto !important;
+    width: 100% !important;
+}
+
+.footer_info {
+    display: flex !important;
+    gap: 10px !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    color: var(--color-003) !important;
+    text-decoration: none !important;
+}
+
+.footer_info:hover {
+    opacity: .5 !important;
+}
+
+.footer_linkedin {
+    font-weight: 700 !important;
+    margin: 5px auto !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer_contact {
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer_container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .footer_author {
+        height: 100% !important;
+        width: auto !important;
+    }
+}

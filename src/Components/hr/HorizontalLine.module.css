@@ -1,0 +1,8 @@
+.hr {
+    box-sizing: border-box !important;
+    background-image: var(--bg-color-001) !important;
+    margin: 10px auto !important;
+
+    height: 1px !important;
+    width: 90% !important;
+}

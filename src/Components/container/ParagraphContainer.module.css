@@ -1,0 +1,94 @@
+.paragraph_container {
+    box-sizing: border-box !important;
+    background-color: var(--bg-color-004) !important;
+
+    display: flex !important;
+    gap: 20px !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    padding: 10px 20px !important;
+    margin: 10px auto !important;
+
+    height: auto !important;
+    width: 100% !important;
+
+    overflow: hidden !important;
+    overflow-x: auto !important;
+}
+
+.paragraph_image {
+    height: auto !important;
+    width: 95% !important;
+
+    overflow: hidden !important;
+}
+
+.paragraph_img_styles {
+    object-fit: cover !important;
+    position: relative !important;
+}
+
+.paragraph_wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    font-size: 18px !important;
+    padding: 10px 0px !important;
+
+    height: auto !important;
+    width: 95% !important;
+
+    overflow: hidden !important;
+}
+
+.paragraph {
+    box-sizing: border-box !important;
+
+    padding: 0 !important;
+    line-height: 1.4em !important;
+    text-align: center !important;
+    hyphens: auto !important;
+    overflow-wrap: break-word !important;
+    color: var(--color-002) !important;
+
+    height: auto !important;
+    width: 100% !important;
+
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .paragraph_image {
+        width: 80% !important;
+    }
+
+    .paragraph_wrapper {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .paragraph_container {
+        flex-direction: row !important;
+        gap: 2% !important;
+        height: 350px !important;
+    }
+
+    .paragraph_image {
+        height: 100% !important;
+        width: 40% !important;
+    }
+
+    .paragraph_wrapper {
+        height: 100% !important;
+        width: 58% !important;
+    }
+
+    .paragraph {
+        text-align: left !important;
+    }
+}

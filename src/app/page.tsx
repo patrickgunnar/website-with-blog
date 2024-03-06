@@ -1,95 +1,51 @@
-import Image from "next/image";
+import Blog from "@/Components/blog/Blog";
 import styles from "./page.module.css";
+import LandingContainer from "@/Components/container/LandingContainer";
+import SupportersContainer from "@/Components/container/SupportersContainer";
+import AboutContainer from "@/Components/container/AboutContainer";
+import ParagraphContainer from "@/Components/container/ParagraphContainer";
+import dummyImage from "../../public/lading-container.jpg";
+import { supporters } from "@/supporters";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    return (
+        <div className={styles.page}>
+            <LandingContainer />
+            <div className={styles.page_label}>
+                <span>Apoiadores &bull; Amigos</span>
+            </div>
+            <SupportersContainer content={supporters} />
+            <div className={styles.page_label}>
+                <span>Visões &bull; Compromissos</span>
+            </div>
+            <AboutContainer
+                imageOne={dummyImage}
+                imageTwo={dummyImage}
+                paragraphOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
+                paragraphTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
             />
-          </a>
+            <div className={styles.page_label}>
+                <span>Leia &bull; Inspire-se &bull; Compartilhe</span>
+            </div>
+            <div className={styles.blog_container}>
+                <Blog />
+            </div>
+            <div className={styles.page_label}>
+                <span>Buscas &bull; Realizações</span>
+            </div>
+            <AboutContainer
+                imageOne={dummyImage}
+                imageTwo={dummyImage}
+                paragraphOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
+                paragraphTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
+            />
+            <div className={styles.page_label}>
+                <span>Agradecimentos &bull; Recompensas</span>
+            </div>
+            <ParagraphContainer
+                image={dummyImage}
+                paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
+            />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    );
 }

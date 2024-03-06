@@ -1,0 +1,107 @@
+.blog {
+    display: grid !important;
+    gap: 20px !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(12, 400px) !important;
+
+    height: auto !important;
+    width: 100% !important;
+}
+
+.no_posts {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    text-align: center !important;
+    color: var(--color-001) !important;
+    padding: 20px auto !important;
+
+    height: auto !important;
+    width: 100% !important;
+}
+
+.blog_paginator_container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    height: auto !important;
+    width: 100% !important;
+}
+
+.blog_paginator {
+    display: flex !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    list-style: none !important;
+    
+    height: auto !important;
+    width: 95% !important;
+}
+
+.blog_page {
+    background-image: var(--bg-color-001) !important;
+    box-shadow: var(--box-shadow-001) !important;
+    border-radius: 5px !important;
+    border: none !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    color: black;
+
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.blog_page_previous,
+.blog_page_next {
+    cursor: pointer !important;
+    display: none !important;
+}
+
+.blog_page:hover,
+.blog_page_previous:hover,
+.blog_page_next:hover {
+    opacity: .5 !important;
+}
+
+.selected {
+    cursor: default !important;
+    opacity: .5 !important;
+    pointer-events: none !important;
+}
+
+@media only screen and (min-width: 480px) {
+    .blog_page_previous,
+    .blog_page_next {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(6, 400px) !important;
+
+        width: 95% !important;
+    }
+
+    .blog_paginator {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .blog {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(4, 400px) !important;
+    }
+}

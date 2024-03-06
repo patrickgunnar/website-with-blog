@@ -1,0 +1,9 @@
+.table {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    
+    height: 100% !important;
+    width: 100% !important;
+}

@@ -1,0 +1,94 @@
+.landing_container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    position: relative !important;
+    margin: 0px auto !important;
+    margin-bottom: 40px !important;
+
+    height: 600px !important;
+    width: 100% !important;
+
+    overflow: hidden !important;
+}
+
+.lading_image {
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    position: relative !important;
+
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.landing_image_element {
+    object-fit: cover !important;
+}
+
+.lading_info {
+    box-sizing: border-box !important;
+    background-image: var(--bg-color-005) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    height: 600px !important;
+    width: 100% !important;
+}
+
+.landing_title {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: self-end !important;
+
+    font-size: 30px !important;
+    font-weight: bold !important;
+    font-family: "Diphylleia", serif !important;
+    text-align: right !important;
+    text-shadow: var(--box-shadow-003) !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    color: var(--color-004) !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: auto !important;
+    margin-bottom: 100px !important;
+
+    height: auto !important;
+    width: 90% !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .landing_title {
+        font-size: 35px !important;
+        margin-right: 40px !important;
+        width: 70% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .landing_title {
+        font-size: 40px !important;
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .landing_title {
+        font-size: 50px !important;
+    }
+}

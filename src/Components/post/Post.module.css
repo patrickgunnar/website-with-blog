@@ -1,0 +1,99 @@
+.post {
+    box-sizing: border-box !important;
+    background-image: var(--bg-color-001) !important;
+    cursor: pointer !important;
+    box-shadow: var(--box-shadow-002) !important;
+    border-radius: 10px !important;
+    border: none !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    height: 100% !important;
+    width: 100% !important;
+
+    overflow: hidden !important;
+}
+
+.post figure,
+.post img {
+    box-sizing: border-box !important;
+    object-fit: cover !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    height: 218px !important;
+    width: calc(100% - 2px) !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 2px !important;
+
+    overflow: hidden !important;
+}
+
+.post p,
+.post_title,
+.post_date {
+    box-sizing: border-box !important;
+
+    margin: 0 auto !important;
+    padding: 5px !important;
+
+    font-weight: normal !important;
+    text-align: left !important;
+    word-break: break-all;
+
+    width: 98% !important;
+    overflow: hidden !important;
+}
+
+.post p {
+    max-height: 100% !important;
+    padding: 0 !important;
+    color: var(--color-002) !important;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+}
+
+.post_title,
+.post_date {
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    text-transform: capitalize !important;
+}
+
+.post_title {
+    font-size: 17px !important;
+    font-weight: bolder !important;
+    color: var(--color-003) !important;
+
+    height: 40px !important;
+}
+
+.post_date {
+    font-size: 15px !important;
+    color: var(--color-001) !important;
+
+    height: 30px !important;
+}
+
+.post_container {
+    box-sizing: border-box !important;
+    display: flex !important;
+
+    padding: 5px !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+
+    height: 90px !important;
+    width: 98% !important;
+
+    overflow: hidden !important;
+}
