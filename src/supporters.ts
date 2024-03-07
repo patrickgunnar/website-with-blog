@@ -1,4 +1,4 @@
-import dummyImageToDisplay from "../public/Supporter.jpg";
+import dummyImageToDisplay from "../public/apoiador.jpg";
 
 export const supporters = [
     {

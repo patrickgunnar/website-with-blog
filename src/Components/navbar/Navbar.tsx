@@ -7,6 +7,7 @@ import { GiVineFlower } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import HorizontalLine from "../hr/HorizontalLine";
+import { createPortal } from "react-dom";
 
 function NavbarElementsMenu({ pathname, onMobileClose }: { pathname: string; onMobileClose: () => void; }) {
     const router = useRouter();
@@ -82,7 +83,12 @@ export default function Navbar() {
                 <NavbarLogo />
                 <FaBars size={28} onClick={handleOpenCloseMobileMenu} />
             </div>
-            {isMobileMenuOpened && <MobileElementsMenu pathname={pathname} onClose={handleOpenCloseMobileMenu} />}
+            {isMobileMenuOpened && (
+                createPortal(
+                    <MobileElementsMenu pathname={pathname} onClose={handleOpenCloseMobileMenu} />,
+                    document.body
+                )
+            )}
         </nav>
     );
 }
