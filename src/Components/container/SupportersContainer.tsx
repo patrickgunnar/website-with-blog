@@ -18,7 +18,7 @@ function SupporterContainer({ name, image }: ContentType) {
             <div className={styles.supporter_img_container}>
                 <Image className={styles.supporter_img}
                     src={image ? image : imageToDisplay}
-                    alt="Imagem do apoiador"
+                    alt="Image"
                     fill
                 />
             </div>
@@ -36,7 +36,7 @@ export default function SupportersContainer({
         <div className={styles.supporters_container}>
             {!content ? (
                 <span className={styles.no_supporters}>
-                    Sem apoiadores para ser apresentado.
+                    No supporters
                 </span>
             ) : (
                 content.map((item) => (

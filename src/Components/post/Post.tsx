@@ -24,14 +24,14 @@ function FigureContent({ figure }: { figure: string | null }) {
     }) : (
         <Image
             src={noImageToDisplay}
-            alt="Nenhuma imagem na publicação"
+            alt="No image"
             height={218}
         />
     )}</>;
 }
 
 function ParagraphContent({ paragraph }: { paragraph: string | null }) {
-    return <>{paragraph ? <p>{striptags(paragraph)}</p> : <p>Sem conteúdo para ser mostrado.</p>}</>;
+    return <>{paragraph ? <p>{striptags(paragraph)}</p> : <p>No content.</p>}</>;
 }
 
 export default function Post({ content }: PostProps) {

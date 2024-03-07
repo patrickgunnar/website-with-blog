@@ -15,7 +15,7 @@ export default function ParagraphContainer({
 }) {
     const formattedParagraph = paragraph
         ? limitSize(paragraph)
-        : "Sem conteúdo para ser mostrado";
+        : "No content";
 
     return (
         <div className={styles.paragraph_container}>
@@ -23,7 +23,7 @@ export default function ParagraphContainer({
                 <Image
                     className={styles.paragraph_img_styles}
                     src={image ? image : noImageToDisplay}
-                    alt="Imagem do Container"
+                    alt="Image"
                     fill
                 />
             </div>

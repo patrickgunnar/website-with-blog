@@ -75,7 +75,7 @@ export default function PageContainer({ posId }: PageContainerProps) {
                             <Image
                                 loader={({ src }) => src}
                                 src={currentPost?.author.url}
-                                alt="Imagem do Autor"
+                                alt="Image"
                                 unoptimized
                                 height={60}
                                 width={60}
@@ -89,13 +89,13 @@ export default function PageContainer({ posId }: PageContainerProps) {
                 </div>
             </section>
             <div className={styles.label}>
-                <span>Outros Artigos e Novidades</span>
+                <span>Lorem Ipsum & Lorem Ipsum</span>
             </div>
             <div className={styles.page_blog_wrapper}>
                 {
                     !otherPost || (otherPost && otherPost.length <= 0) ? (
                         <div className={styles.no_posts}>
-                            <span>Sem outras publicações!</span>
+                            <span>No content!</span>
                         </div>
                     ) : (
                         <section className={styles.page_container_blog}>

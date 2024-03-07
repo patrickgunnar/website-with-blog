@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <div className={styles.about_page}>
             <div className={styles.about_title}>
-                <span>Conheça Sobre Minha História</span>
+                <span>Lorem Ipsum</span>
             </div>
             <AboutContainer
                 imageOne={dummyImage}
@@ -16,14 +16,14 @@ export default function Page() {
                 paragraphTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
             />
             <div className={styles.about_page_label}>
-                <span>Buscas &bull; Contribuições</span>
+                <span>Lorem Ipsum &bull; Lorem Ipsum</span>
             </div>
             <ParagraphContainer
                 image={dummyImage}
                 paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
             />
             <div className={styles.about_page_label}>
-                <span>Verdades &bull; Inspirações</span>
+                <span>Lorem Ipsum &bull; Lorem Ipsum</span>
             </div>
             <AboutContainer
                 imageOne={dummyImage}
@@ -32,7 +32,7 @@ export default function Page() {
                 paragraphTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit. Non odio euismod lacinia at quis risus sed vulputate. Pharetra vel turpis nunc eget lorem dolor sed. Sed adipiscing diam donec adipiscing tristique. Elementum sagittis vitae et leo duis ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Varius duis at consectetur lorem donec massa sapien. Neque laoreet suspendisse interdum consectetur libero id. Orci sagittis eu volutpat odio facilisis. Mauris a diam maecenas sed enim. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Laoreet suspendisse interdum consectetur libero id. Velit egestas dui id ornare arcu odio ut sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Elementum eu facilisis sed odio morbi quis commodo odio. Vitae proin sagittis nisl rhoncus mattis rhoncus. Lacinia quis vel eros donec ac odio tempor orci. Arcu odio ut sem nulla pharetra diam sit."
             />
             <div className={styles.about_page_label}>
-                <span>Jornada &bull; Caminhos</span>
+                <span>Lorem Ipsum &bull; Lorem Ipsum</span>
             </div>
             <ParagraphContainer
                 image={dummyImage}

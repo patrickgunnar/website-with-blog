@@ -30,14 +30,14 @@ function NavbarElementsMenu({ pathname, onMobileClose }: { pathname: string; onM
                 onClick={(() => push("/sobre"))}
             >
                 <FaUser />
-                <span>Sobre Mim</span>
+                <span>About</span>
             </li>
             <li 
                 className={`${styles.navbar_li} ${pathname === "/projetos" ? styles.navbar_selected : ""}`}
                 onClick={(() => push("/projetos"))}
             >
                 <FaThLarge />
-                <span>Meus Projetos</span>
+                <span>Projects</span>
             </li>
         </ul>
     );

@@ -56,8 +56,8 @@ export default function Blog() {
                     breakLabel="..."
                     pageRangeDisplayed={pageRange}
                     marginPagesDisplayed={2}
-                    previousLabel="< Anterior"
-                    nextLabel="Próximo >"
+                    previousLabel="< Previous"
+                    nextLabel="Next >"
                     previousClassName={styles.blog_page_previous}
                     nextClassName={styles.blog_page_next}
                     pageLinkClassName={styles.blog_page}

@@ -7,14 +7,14 @@ export default function LandingContainer() {
         <div className={styles.lading_image}>
             <Image
                 src={ladingImageToDisplay}
-                alt="Imagem de entrada"
+                alt="Image"
                 className={styles.landing_image_element}
                 fill
             />
         </div>
         <div className={styles.lading_info}>
             <div className={styles.landing_title}>
-                Construindo Juntos o Futuro que Queremos: Transparência, Compromisso e Progresso.
+                Building the Future We Want Together: Transparency, Commitment and Progress.
             </div>
         </div>
     </section>;

@@ -19,10 +19,10 @@ export default function AboutContainer({
 }) {
     const formattedParagraphOne = paragraphOne
         ? limitSize(paragraphOne)
-        : "Sem conteúdo para ser mostrado";
+        : "No content";
     const formattedParagraphTwo = paragraphTwo
         ? limitSize(paragraphTwo)
-        : "Sem conteúdo para ser mostrado";
+        : "No content";
 
     return (
         <div className={styles.about_container}>
@@ -31,7 +31,7 @@ export default function AboutContainer({
                     <Image
                         className={styles.about_img_styles}
                         src={imageOne ? imageOne : noImageToDisplay}
-                        alt="Imagem do Container"
+                        alt="Image"
                         fill
                     />
                 </div>
@@ -51,7 +51,7 @@ export default function AboutContainer({
                     <Image
                         className={styles.about_img_styles}
                         src={imageTwo  ? imageTwo : noImageToDisplay}
-                        alt="Imagem do Container"
+                        alt="Image"
                         fill
                     />
                 </div>

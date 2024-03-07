@@ -1,79 +1,79 @@
-import dummyImageToDisplay from "../public/apoiador.jpg";
+import dummyImageToDisplay from "../public/Supporter.jpg";
 
 export const supporters = [
     {
         id: "01",
-        name: "Apoiador 01",
+        name: "Supporter 01",
         image: dummyImageToDisplay,
     },
     {
         id: "02",
-        name: "Apoiador 02",
+        name: "Supporter 02",
         image: dummyImageToDisplay,
     },
     {
         id: "03",
-        name: "Apoiador 03",
+        name: "Supporter 03",
         image: dummyImageToDisplay,
     },
     {
         id: "04",
-        name: "Apoiador 04",
+        name: "Supporter 04",
         image: dummyImageToDisplay,
     },
     {
         id: "05",
-        name: "Apoiador 05",
+        name: "Supporter 05",
         image: dummyImageToDisplay,
     },
     {
         id: "06",
-        name: "Apoiador 06",
+        name: "Supporter 06",
         image: dummyImageToDisplay,
     },
     {
         id: "07",
-        name: "Apoiador 07",
+        name: "Supporter 07",
         image: dummyImageToDisplay,
     },
     {
         id: "08",
-        name: "Apoiador 08",
+        name: "Supporter 08",
         image: dummyImageToDisplay,
     },
     {
         id: "09",
-        name: "Apoiador 09",
+        name: "Supporter 09",
         image: dummyImageToDisplay,
     },
     {
         id: "10",
-        name: "Apoiador 10",
+        name: "Supporter 10",
         image: dummyImageToDisplay,
     },
     {
         id: "11",
-        name: "Apoiador 11",
+        name: "Supporter 11",
         image: dummyImageToDisplay,
     },
     {
         id: "12",
-        name: "Apoiador 12",
+        name: "Supporter 12",
         image: dummyImageToDisplay,
     },
     {
         id: "13",
-        name: "Apoiador 13",
+        name: "Supporter 13",
         image: dummyImageToDisplay,
     },
     {
         id: "14",
-        name: "Apoiador 14",
+        name: "Supporter 14",
         image: dummyImageToDisplay,
     },
     {
         id: "15",
-        name: "Apoiador 15",
+        name: "Supporter 15",
         image: dummyImageToDisplay,
     },
 ];
