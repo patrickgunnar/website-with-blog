@@ -74,21 +74,23 @@ export default function Navbar() {
     }
 
     return (
-        <nav className={styles.navbar}>
-            <div className={styles.desktop}>
-                <NavbarElementsMenu pathname={pathname} onMobileClose={() => {}} />
-                <NavbarLogo />
-            </div>
-            <div className={styles.mobile}>
-                <NavbarLogo />
-                <FaBars size={28} onClick={handleOpenCloseMobileMenu} />
-            </div>
+        <>
+            <nav className={styles.navbar}>
+                <div className={styles.desktop}>
+                    <NavbarElementsMenu pathname={pathname} onMobileClose={() => {}} />
+                    <NavbarLogo />
+                </div>
+                <div className={styles.mobile}>
+                    <NavbarLogo />
+                    <FaBars size={28} onClick={handleOpenCloseMobileMenu} />
+                </div>
+            </nav>
             {isMobileMenuOpened && (
                 createPortal(
                     <MobileElementsMenu pathname={pathname} onClose={handleOpenCloseMobileMenu} />,
                     document.body
                 )
             )}
-        </nav>
+        </>
     );
 }
