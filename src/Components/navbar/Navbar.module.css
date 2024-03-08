@@ -118,6 +118,7 @@
 
     height: 100vh !important;
     width: 100vw !important;
+    z-index: 10000 !important;
 }
 
 .mobile_closing {

@@ -52,30 +52,6 @@
     }
 }
 
-@-webkit-keyframes slideInDown {
-    0% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInDown {
-    0% {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-} 
-
 * {
     transition: all 0.2s ease-in-out !important;
 
@@ -103,13 +79,6 @@ body {
 
     color: rgb(var(--foreground-rgb)) !important;
     background-image: var(--bg-color-002) !important;
-
-    -webkit-animation-name: slideInDown;
-    animation-name: slideInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
 }
 
 ::-webkit-scrollbar {
